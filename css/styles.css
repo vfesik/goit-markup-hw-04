@@ -199,6 +199,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   padding: 16px 32px;
+  border: none;
 }
 .order-hero-btn:hover,
 .order-hero-btn:focus {
@@ -223,13 +224,14 @@ body {
   background-color: #f4f4fd;
   justify-content: center;
   align-items: center;
+  margin-bottom: 8px;
 }
 .advantages-icons {
   width: 64px;
   height: 64px;
 }
-.section-advantages {
-}
+/* .section-advantages {
+} */
 /* .advantages-link {
   justify-content: center;
 } */
@@ -367,11 +369,11 @@ body {
 }
 
 /* --------------------------------------Section 5 Customer------------------------------------- */
-.section-customers {
-}
+/* .section-customers {
+} */
 
-.customers-title {
-}
+/* .customers-title {
+} */
 .cusotmers-list {
   display: flex;
   gap: 24px;
@@ -379,7 +381,26 @@ body {
   align-items: center;
 }
 
-.customers-item {
+/* .customers-item {
+  width: 168px;
+  height: 88px;
+  border: 1px solid;
+  border-color: #8e8f99;
+  fill: #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+} */
+/* .customers-item:is(:hover, :focus) {
+  border-color: #404bbf;
+  color: #404bbf;
+} */
+.customers-link {
   width: 168px;
   height: 88px;
   border: 1px solid;
@@ -394,18 +415,27 @@ body {
   padding-left: 32px;
   padding-right: 32px;
 }
-.customers-item:is(:hover, :focus) {
+.customers-link:hover {
+  border-color: #404bbf;
+  fill: #404bbf;
+}
+.customers-link:focus {
+  border-color: #404bbf;
+  fill: #404bbf;
+}
+
+/* .customers-link is(:hover, :focus) {
   border-color: #404bbf;
   color: #404bbf;
-}
+} */
 .customer-icon {
   width: 104px;
   height: 56px;
 }
-.customer-icon:hover,
+/* .customer-icon:hover,
 :focus {
   fill: currentColor;
-}
+} */
 /* --------------------------------------Footer------------------------------------- */
 .footer {
   background-color: var(--main-title-color);
@@ -469,13 +499,13 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-social-icon {
-}
+/* .footer-social-icon {
+} */
 .footer-social-link:is(:hover, :focus) {
   background-color: #31d0aa;
 }
-.footer-social-media {
-}
+/* .footer-social-media {
+} */
 
 .footer-text-two {
   font-family: "Roboto";
@@ -492,13 +522,13 @@ body {
   gap: 16px;
 }
 
-.footer-social-item {
+/* .footer-social-item {
 }
 .footer-social-link {
 }
 
 .footer-social-icon {
-}
+} */
 
 /* --------------------------------------Portfolio.html------------------------------------- */
 /* .main {
@@ -542,7 +572,10 @@ body {
   cursor: pointer;
   padding: 12px 24px;
 }
-.filter-btn:hover,
+.filter-btn:hover {
+  color: var(--main-background-color);
+  background-color: var(--color-hover-focus);
+}
 .filter-btn:focus {
   color: var(--main-background-color);
   background-color: var(--color-hover-focus);
@@ -566,7 +599,15 @@ body {
   flex-wrap: wrap;
   /* padding-bottom: 120px; */
 }
-.works-list :is(:hover, :focus) {
+
+/* .works-list :is(:hover, :focus) {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+} */
+.works-link {
+  display: block;
+}
+.works-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
